@@ -1,0 +1,54 @@
+
+.header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    text-align:  center;  
+    margin: 0 0 0 0; 
+  
+}
+
+.center-title{
+    font-size: 4em; 
+    color: rgb(222,71,153); 
+
+}
+
+.selector-title{
+    font-size: 1.8em; 
+    font-weight: bold; 
+    color: rgb(56,76, 160); 
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0; 
+}
+
+.selector-title span{
+    margin-right : 0.2em; 
+    margin-left : 0.2em; 
+    border-bottom: 0.2em solid rgb(56,76,160); 
+}
+
+.type-hours::before{
+    content: "X"; 
+}
+
+.content{
+    margin-top: 3em; 
+    font-family: 'Lato', sans-serif;
+    font-size: 12px; 
+    
+}
+
+.photo{
+    padding-left : 0; 
+}
+.game{
+    margin: 1em 0 1em 0; 
+    background-color: grey; 
+}
+.filter{
+
+}
+
+.type-names{
+}
