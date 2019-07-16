@@ -33,10 +33,32 @@
             <div class="col"> </div>
 
                 <div class="center-title col-auto">
-                        <span>GAMES</span>
-                    </div>
-                    <div class="selector-title col">
-                        <span>JAMS </span> x <span> 4H</span>
+                    GAMES
+                </div>
+                    <div class="selector-title col ">
+                        <div class ="dropdown show">
+                                <a class="dropdown-toggle filter-element filter-name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >ALL</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" onclick="allFilter()" href="#">ALL</a>
+                                        <a class="dropdown-item" onclick="gamesFilter()" href="#">GAMES</a>
+                                        <a class="dropdown-item" onclick="toolsFilter()" href="#">TOOLS</a>
+                                        <a class="dropdown-item" onclick="jamsFilter()" href="#">JAMS</a>
+                                </div>
+                        </div>
+                        <div class="hide-filter">
+                            x 
+                            <div class ="dropdown show">
+                                    <a class="dropdown-toggle filter-element filter-hour" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >All hours</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" onclick="jamsFilter()" href="#">ALL hours</a>
+                                            <a class="dropdown-item" onclick="oneHourFilter()" href="#">1H</a>
+                                            <a class="dropdown-item" onclick="fourHoursFilter()" href="#">4H</a>
+                                            <a class="dropdown-item" onclick="oneDayFilter()" href="#">24H</a>
+                                            <a class="dropdown-item" onclick="twoDaysFilter()" href="#">48H</a>
+                                    </div>
+                            </div>
+                        </div>
+                         
                     </div>
                             
 
@@ -49,53 +71,43 @@
             <div class="col"></div>
 
             
-            <div class="col-4">
+            <div class="col-5">
 
-                <div class ="game row">
-                    <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                    <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
+                <div class ="work row jam 24h">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/waltz-of-auri.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">WALTZ OF AURI</div>
+                        <div class="game-subtitle"><a href="https://google.es">link</a></div>
+                        <div class="text">
+                                Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet,
+                                eat an easter feather as if it were a bird then burp victoriously. 
+                        </div>
+                    </div>
                 </div>
 
+                <div class ="work row game ">
+                        <div class="photo col-auto"> <div class="photo-container"><img src="https://placekitten.com/100/100" alt=""></div>  </div>
+                        <div class="description col"> 
+                            <div class="game-title">VAIA JUEGASO LOCO</div>
+                            <div class="text">
+                                    Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet,
+                                    eat an easter feather as if it were a bird then burp victoriously. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class ="work row game">
+                            <div class="photo col-auto"> <div class="photo-container"><img src="https://placekitten.com/100/100" alt=""></div>  </div>
+                            <div class="description col"> 
+                                <div class="game-title">VAIA JUEGASO LOCO</div>
+                                <div class="text">
+                                        Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet,
+                                        eat an easter feather as if it were a bird then burp victoriously. 
+                                </div>
+                            </div>
+                        </div>
                 
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
-                    
-                <div class ="game row">
-                        <div class="photo col-auto"> <img src="https://placekitten.com/100/100" alt=""> </div>
-                        <div class="description col"> Stare out the window find something else more interesting, and burrow under covers, so drink water out of the faucet, eat an easter feather as if it were a bird then burp victoriously, but tender or cats making all the muffins. </div>
-                    </div>
+                
             </div>
 
 
@@ -108,6 +120,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="./js/index.js"></script>
 </body>
 </html>
