@@ -34,6 +34,12 @@ function showHourSelector(){
     selector[0].style.display= "flex"; 
 }
 
+function filterActive(){
+    var selector = document.getElementsByClassName("filter-title");
+    selector[0].style.display="none";
+    selector = document.getElementsByClassName("selector-title");
+    selector[0].style.display="flex"
+}
 
 function allFilter(){
     changeFilterName("ALL")
