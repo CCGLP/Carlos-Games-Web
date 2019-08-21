@@ -33,29 +33,30 @@
             <div class="col"> </div>
 
                 <div class="center-title col-auto">
-                    GAMES
+                    JUEGOS
                 </div>
                 <div class="filter-title col">
-                    <a href="#" onclick="filterActive()" >Filter</a>    
+                    <a href="#" onclick="filterActive()" >Filtro</a>    
                 </div>
                     
                 
                     <div class="selector-title col ">
                         <div class ="dropdown show">
-                                <a class="dropdown-toggle filter-element filter-name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >ALL</a>
+                                <a class="dropdown-toggle filter-element filter-name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >TODO</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" onclick="allFilter()" href="#">ALL</a>
-                                        <a class="dropdown-item" onclick="gamesFilter()" href="#">GAMES</a>
-                                        <a class="dropdown-item" onclick="toolsFilter()" href="#">TOOLS</a>
+                                        <a class="dropdown-item" onclick="allFilter()" href="#">TODOS</a>
+                                        <a class="dropdown-item" onclick="selectionFilter()" href="#">SELECCIÓN</a>
+                                        <a class="dropdown-item" onclick="gamesFilter()" href="#">JUEGOS</a>
+                                        <!--<a class="dropdown-item" onclick="toolsFilter()" href="#">TOOLS</a>-->
                                         <a class="dropdown-item" onclick="jamsFilter()" href="#">JAMS</a>
                                 </div>
                         </div>
                         <div class="hide-filter">
                             x 
                             <div class ="dropdown show">
-                                    <a class="dropdown-toggle filter-element filter-hour" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >All hours</a>
+                                    <a class="dropdown-toggle filter-element filter-hour" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >TODO</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" onclick="jamsFilter()" href="#">ALL hours</a>
+                                            <a class="dropdown-item" onclick="jamsFilter()" href="#">TODO</a>
                                             <a class="dropdown-item" onclick="oneHourFilter()" href="#">1H</a>
                                             <a class="dropdown-item" onclick="fourHoursFilter()" href="#">4H</a>
                                             <a class="dropdown-item" onclick="oneDayFilter()" href="#">24H</a>
@@ -73,46 +74,186 @@
 
     <div class="content container-fluid">
         <div class="row">
-            <div class="col"></div>
+
+            <div class="col-1 smallcol"></div>
+            <div class="col-2 midcol"></div>
+            <div class="col-3 bigcol"></div>
 
             
-            <div class="col-5">
+            <div class="col">
 
-                <div class ="work row jam 24h" onclick="document.location='https://mizardry.itch.io/waltz-of-auri'">
+                <div class ="work row jam 24h selection" onclick="document.location='https://mizardry.itch.io/waltz-of-auri'">
                     <div class="photo col-auto"> <div class="photo-container"><img src="./img/waltz-of-auri.png" alt=""></div>  </div>
                     <div class="description col"> 
                         <div class="game-title">WALTZ OF AURI</div>
                         <div class="text">
-                              Waltz of Auri es un juego creado en la jam Talentum de telefónica de 2017. Nuestro grupo ganó el primer premio de la JAM de 5000€.
+                              Waltz of Auri es un juego narrativo creado en la jam Talentum Telefónica de 2017. Nuestro grupo ganó el primer premio de la JAM de 5000€. Único programador del equipo.
                         </div>
                     </div>
                 </div>
 
-                <div class ="work row game" onclick="document.location='http://ccglp.es/fastbeta/'">
+                <div class ="work row game selection" onclick="document.location='http://ccglp.es/fastbeta/'">
                     <div class="photo col-auto"> <div class="photo-container"><img src="./img/fast.png" alt=""></div>  </div>
                     <div class="description col"> 
                         <div class="game-title">FAST</div>
                         <div class="text">
-                             Fast es una prueba de concepto de un juego roguelike simple. Es un juego creado únicamente por mí. El jugador tendrá que encontrar una llave y escapar del nivel.  
+                             Fast es una prueba de concepto de juego roguelike simple. Juego creado únicamente por mí. El jugador tendrá que encontrar una llave y escapar de cada nivel.  
                         </div>
                     </div>
                 </div>
 
 
-                <div class ="work row game" onclick="document.location='https://play.google.com/store/apps/details?id=com.goldencoconut.sponk&hl=es_419'">
+                <div class ="work row game selection" onclick="document.location='https://play.google.com/store/apps/details?id=com.goldencoconut.sponk&hl=es_419'">
                     <div class="photo col-auto"> <div class="photo-container"><img src="./img/spons.png" alt=""></div>  </div>
                     <div class="description col"> 
                         <div class="game-title">SPONS</div>
                         <div class="text">
-                            Spons es un juego de móvil creado por el estudio Rumble Moon. Es un juego procedimental en el que el jugador tendrá que avanzar hasta el final y obtener la mejor puntuación posible. 
+                            Spons es un juego de móvil creado por el estudio Rumble Moon. Es un juego procedimental en el que el jugador tendrá que avanzar hasta el final y obtener la mejor puntuación posible.
+                            
                         </div>
                     </div>
                 </div>
                 
+                
+                <div class ="work row game selection" onclick="document.location='https://ccglp.itch.io/fruits'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/fruits.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Fruit Box</div>
+                        <div class="text">
+                            Fruit Box es un juego originalmente creado para móvil para la incubadora Demium Games. Creado por Rumble Moon, únicamente programado por mí. Fruit Box es un juego de puzzles donde hay que tirar las frutas a cada caja. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 48h selection" onclick="document.location='https://shen-dev.itch.io/marye'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/marye.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Marye</div>
+                        <div class="text">
+                            Marye es un juego narrativo que se asoma a la vida de una mujer que trata de compaginar maternidad y trabajo, mientras intenta lidiar con las situaciones sociales que ello implica. Inspirada en la tragedia de Federico García Lorca.  
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 24h selection" onclick="document.location='https://torguet94.itch.io/escape-from-rlyeh'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/rlyeh.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Escape from R'Lyeh</div>
+                        <div class="text">
+                            Escape from R'Lyeh es un juego cooperativo entre dos jugadores, donde ambos tendrán que desentrañar los secretos de un templo perdido debajo del mar. Juego creado para la Talentum Jam Telefónica 2018 en 24 horas.  
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 48h selection" onclick="document.location='https://ldjam.com/events/ludum-dare/41/trpg-meets-games'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/trpg.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">TRPG Meets Games</div>
+                        <div class="text">
+                            TRPG Meets Games es un juego creado para la Ludum Dare Jam 41 en solitario en 48 horas. El tema de la jam era mezclar géneros, así que es una mezcla entre un TRPG típico (Fire Emblem) con algunos juegos clásicos como Pacman o Arkanoid.  
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 48h selection" onclick="document.location='https://ldjam.com/events/ludum-dare/43/time'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/time.jpg" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Time</div>
+                        <div class="text">
+                            Time es un juego experimental creado para la Ludum Dare 43 en solitario en 48 horas. Es un juego sobre organizar tu tiempo reducido a la mínima expresión, simplemente decidir que vas a hacer con tu tiempo cada día.
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 48h selection" onclick="document.location='https://alfarom.itch.io/nec-romancer'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/necromancer.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">NecRomancer</div>
+                        <div class="text">
+                            NecRomancer es un juego creado para la jam de la asociación de estudiantes de videojuegos en 2016. En el controlas a un nigromante esperando a su cita en una calle muy concurrida, con lo que tendrá que evitar tocar a nadie.
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 48h selection" onclick="document.location='http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=34494'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/bitbullet.jpg" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">BitBullet</div>
+                        <div class="text">
+                           BitBullet es un juego creado para la Ludum Dare 36 en solitario en 48 horas. Es una vuelta de hoja a los juegos narrativos basados en texto dándole un toque de acción después de un plot twist. 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class ="work row jam 48h" onclick="document.location='https://ldjam.com/events/ludum-dare/38/greyer'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/greyer.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Greyer</div>
+                        <div class="text">
+                           Greyer es un juego experimental personal creado para la Ludum Dare 38 en la modalidad en solitario. Se hacen pruebas con la UI de Unity. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class ="work row jam 24h" onclick="document.location='https://github.com/CCGLP/HackForGood_2016_Api'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/api.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Api</div>
+                        <div class="text">
+                           Api es un juego ganador de la Hack For Good 2016 en la categoría de diseño. Se intenta crear un tamagochi para prevenir el bullying infantil.  
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class ="work row jam 24h" onclick="document.location='http://ludumdare.com/compo/ludum-dare-37/?action=preview&uid=34494'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/fire-night.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Fire Night</div>
+                        <div class="text">
+                           Fire Night es un juego creado para la Ludum Dare 37, en la modalidad en solitario. Es un juego de acción donde hay que apagar los distintos fuegos que se expanden en tu casa.
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class ="work row game" onclick="document.location='https://ccglp.itch.io/mummy-pyramid'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/mummy-pyramid.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Mummy Pyramid</div>
+                        <div class="text">
+                           Mummy Pyramid es un juego originalmente creado para móvil para la incubadora Demium Games. Es un prototipo no acabado de un juego de acción infinito que sucede en el interior de una pirámide. 
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class ="work row game" onclick="document.location='https://ccglp.itch.io/reach-the-henyard'">
+                    <div class="photo col-auto"> <div class="photo-container"><img src="./img/gallina.png" alt=""></div>  </div>
+                    <div class="description col"> 
+                        <div class="game-title">Reach The Henyard</div>
+                        <div class="text">
+                           Reach The Henyard es un juego originalmente creado para móvil para la incubadora Demium Games. Es un juego completo que fue retirado de la Play Store por la propia incubadora. Es un juego de plataformas
+                           sencillo donde tendrás que posarte sobre tu nido e incubar huevos.   
+                        </div>
+                    </div>
+                </div>
+
+
+            
+
+
+
+
             </div>
 
 
-            <div class="col"></div>
+            <div class="col-1 smallcol"></div>
+            <div class="col-2 midcol"></div>
+            <div class="col-3 bigcol"></div>
         </div>
     </div>
 

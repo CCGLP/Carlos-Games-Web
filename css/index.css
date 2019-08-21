@@ -109,3 +109,56 @@
 
 .type-names{
 }
+
+
+
+
+.smallcol{
+    display:flex;
+}
+
+.midcol{
+    display:none; 
+}
+
+.bigcol{
+    display: none; 
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px)  {
+    .smallcol{
+        display:none;
+    }
+    
+    .midcol{
+        display:flex; 
+    }
+    
+    .bigcol{
+        display: none; 
+    }
+
+}
+
+
+@media screen and (min-width: 1400px)  {
+    .smallcol{
+        display:none;
+    }
+    
+    .midcol{
+        display:none; 
+    }
+    
+    .bigcol{
+        display: flex; 
+    }
+
+}
+

@@ -42,14 +42,14 @@ function filterActive(){
 }
 
 function allFilter(){
-    changeFilterName("ALL")
+    changeFilterName("Todo")
     hideHourSelector(); 
     filterByName("work")
 }
 function gamesFilter(){
     preFilter(); 
     hideHourSelector();
-    changeFilterName("games")
+    changeFilterName("juegos")
     filterByName("game");
 }
 
@@ -57,17 +57,24 @@ function gamesFilter(){
 function toolsFilter(){
     preFilter(); 
     hideHourSelector(); 
-    changeFilterName("tools")
+    changeFilterName("herramientas")
     filterByName("tool");
 }
 
 
 function jamsFilter(){
     preFilter(); 
-    changeFilterHour("All hours")
+    changeFilterHour("todo")
     showHourSelector(); 
     changeFilterName("jams")
     filterByName("jam")
+}
+
+function selectionFilter(){
+    preFilter(); 
+    hideHourSelector(); 
+    changeFilterName("selección");
+    filterByName("selection"); 
 }
 
 
@@ -94,3 +101,5 @@ function twoDaysFilter(){
     changeFilterHour("48h"); 
     filterByName("48h")
 }
+
+selectionFilter(); 
